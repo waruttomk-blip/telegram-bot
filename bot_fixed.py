@@ -10,9 +10,9 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 from PIL import Image, ImageDraw, ImageFont
-import datetime, textwrap, re, os
+import os
 
-TOKEN          = "8747363214:AAH-iOeLgMMmNUhRfXiqzg8-3yZZwuq7smY"
+TOKEN = os.getenv("TOKEN")
 FONT_SIZE      = 32
 FONT_SIZE_INFO = 30
 
